@@ -200,7 +200,7 @@ export const searcherClient = (
     return new SearcherClient(
       new SearcherServiceClient(
         url,
-        ChannelCredentials.createSsl(),
+        ChannelCredentials.createInsecure(),
         grpcOptions
       )
     );
